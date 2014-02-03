@@ -2682,3 +2682,60 @@ org.springframework.dao.OptimisticLockingFailureException: Attempt to update ste
         disney disney0_ 
     where
         disney0_.idDisney=?
+[2014-02-03 12:50:28,614] [WARN ] [] [] [o.h.s.i.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2014-02-03 12:50:32,290] [DEBUG] [] [] [o.h.e.j.s.SqlStatementLogger.logStatement] 
+    /* insert com.eurodisney.test.domain.Department
+        */ insert 
+        into
+            department
+            (idDisney, name, id) 
+        values
+            (?, ?, ?)
+[2014-02-03 12:50:32,363] [DEBUG] [] [] [o.h.e.j.s.SqlStatementLogger.logStatement] 
+    /* load com.eurodisney.test.domain.Department */ select
+        department0_.id as id1_0_0_,
+        department0_.idDisney as idDisney3_0_0_,
+        department0_.name as name2_0_0_ 
+    from
+        department department0_ 
+    where
+        department0_.id=?
+[2014-02-03 12:50:32,405] [DEBUG] [] [] [o.h.e.j.s.SqlStatementLogger.logStatement] 
+    /* insert com.eurodisney.test.domain.Department
+        */ insert 
+        into
+            department
+            (idDisney, name, id) 
+        values
+            (?, ?, ?)
+[2014-02-03 12:50:33,065] [DEBUG] [] [] [o.h.e.j.s.SqlStatementLogger.logStatement] 
+    /* select
+        generatedAlias0 
+    from
+        Department as generatedAlias0 
+    where
+        generatedAlias0.idDisney is null */ select
+            department0_.id as id1_0_,
+            department0_.idDisney as idDisney3_0_,
+            department0_.name as name2_0_ 
+        from
+            department department0_ 
+        where
+            department0_.idDisney is null
+[2014-02-03 12:50:33,195] [DEBUG] [] [] [o.h.e.j.s.SqlStatementLogger.logStatement] 
+    /* insert com.eurodisney.test.domain.Disney
+        */ insert 
+        into
+            disney
+            (name, realname, idDisney) 
+        values
+            (?, ?, ?)
+[2014-02-03 12:50:33,197] [DEBUG] [] [] [o.h.e.j.s.SqlStatementLogger.logStatement] 
+    /* load com.eurodisney.test.domain.Disney */ select
+        disney0_.idDisney as idDisney1_1_0_,
+        disney0_.name as name2_1_0_,
+        disney0_.realname as realname3_1_0_ 
+    from
+        disney disney0_ 
+    where
+        disney0_.idDisney=?

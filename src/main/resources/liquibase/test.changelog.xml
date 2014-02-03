@@ -41,4 +41,8 @@
     <changeSet author="vanguyen" id="1390577905369-7">
         <addPrimaryKey columnNames="id" constraintName="PRIMARY-newtable" tableName="newtable"/>
     </changeSet>
+    
+    <changeSet author="vanguyen" id="1390577905369-8">
+        <dropColumn tableName="newtable" columnName="newrealname"/>
+    </changeSet>
 </databaseChangeLog>
