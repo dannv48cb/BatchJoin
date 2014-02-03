@@ -27,4 +27,18 @@
     <changeSet author="vanguyen (generated)" id="1390577905369-5">
         <addForeignKeyConstraint baseColumnNames="idDisney" baseTableName="department" constraintName="FK" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="idDisney" referencedTableName="disney"/>
     </changeSet>
+    
+    
+     <changeSet author="vanguyen" id="1390577905369-6">
+        <createTable tableName="newtable">
+            <column name="id" type="INT(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="newname" type="VARCHAR(45)"/>
+            <column name="newrealname" type="VARCHAR(45)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="vanguyen" id="1390577905369-7">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY-newtable" tableName="newtable"/>
+    </changeSet>
 </databaseChangeLog>
