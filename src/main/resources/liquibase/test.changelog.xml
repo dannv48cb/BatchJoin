@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+    <changeSet author="vanguyen (generated)" id="1390577905369-1">
+        <createTable tableName="department">
+            <column name="id" type="INT(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="idDisney" type="INT(10)"/>
+            <column name="name" type="VARCHAR(45)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="vanguyen (generated)" id="1390577905369-2">
+        <createTable tableName="disney">
+            <column name="idDisney" type="INT(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(45)"/>
+            <column name="realname" type="VARCHAR(45)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="vanguyen (generated)" id="1390577905369-3">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY-department" tableName="department"/>
+    </changeSet>
+    <changeSet author="vanguyen (generated)" id="1390577905369-4">
+        <addPrimaryKey columnNames="idDisney" constraintName="PRIMARY-disney" tableName="disney"/>
+    </changeSet>
+    <changeSet author="vanguyen (generated)" id="1390577905369-5">
+        <addForeignKeyConstraint baseColumnNames="idDisney" baseTableName="department" constraintName="FK" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="idDisney" referencedTableName="disney"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<disney>
+	<departmentDisney>
+		<idDepartment>1</idDepartment>
+		<nameDepartment>Informatique</nameDepartment>
+		<nameDisneyEmployee>NGUYEN</nameDisneyEmployee>
+		<realnameDisneyEmployee>VANDAN</realnameDisneyEmployee>
+	</departmentDisney>
+	<departmentDisney>
+		<idDepartment>2</idDepartment>
+		<nameDepartment>Achat</nameDepartment>
+		<nameDisneyEmployee>NGUYEN</nameDisneyEmployee>
+		<realnameDisneyEmployee>VANDAN</realnameDisneyEmployee>
+	</departmentDisney>
+</disney>
